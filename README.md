@@ -10,17 +10,17 @@ TensorFlow implementation of [Neural Combinatorial Optimization with Reinforceme
 ## Requirements
 
 - Python 2.7
-- [tqdm](httsp://github.com/tqdm/tqdm)
-- [TensorFlow 0.12.1](httsp://github.com/tensorflow/tensorflow/tree/r0.12)
-
+- [tqdm](https://github.com/tqdm/tqdm)
+- [TensorFlow 1.0.0](https://www.tensorflow.org/versions/r1.0/install/)
+- [requests](https://github.com/requests/requests)
 
 ## Usage
 
 To train a model:
 
-    $ python main.py --task=tsp20 --lr_start=0.001 --min_data_length=5 --max_data_length=20
-    $ python main.py --task=tsp50 --lr_start=0.001 --min_data_length=5 --max_data_length=50
-    $ python main.py --task=tsp100 --lr_start=0.0001 --min_data_length=5 --max_data_length=100
+    $ python main.py --task=tsp --lr_start=0.001 --min_data_length=5 --max_data_length=20
+    $ python main.py --task=tsp --lr_start=0.001 --min_data_length=5 --max_data_length=50
+    $ python main.py --task=tsp --lr_start=0.0001 --min_data_length=5 --max_data_length=100
 
 
 To train a model:

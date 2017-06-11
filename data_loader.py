@@ -203,7 +203,9 @@ class TSPDataLoader(object):
           '{}{}-{}_{}'.format(self.task, self.min_length, self.max_length, mode))
 
       for key in candidates:
+        print(key)
         for search_key in GOOGLE_DRIVE_IDS.keys():
+          
           if search_key.startswith(key):
             path = os.path.join(self.data_dir, search_key)
             tf.logging.info("Download dataset of the paper to {}".format(path))
