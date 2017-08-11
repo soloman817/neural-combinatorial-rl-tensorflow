@@ -94,7 +94,7 @@ def trainable_initial_state(batch_size, state_size,
   else:
     flat_initializer = tuple(tf.zeros_initializer for initializer in flat_state_size)
 
-  names = ["{}_{}".format(name, i) for i in xrange(len(flat_state_size))]
+  names = ["{}_{}".format(name, i) for i in range(len(flat_state_size))]
   tiled_states = []
 
   for name, size, init in zip(names, flat_state_size, flat_initializer):
